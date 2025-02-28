@@ -6,6 +6,25 @@ kick2.wav
 ... kick9.wav
 hihat1.wav ... hihat9.wav
 
+update only http://carlitoslocacoes.com/Oneshot/
+add bass9.wav on library http://carlitoslocacoes.com/Oneshot/
+<audio id="audio-kick" src="http://carlitoslocacoes.com/Oneshot/kick9.wav"></audio>
+<audio id="audio-snare" src="http://carlitoslocacoes.com/Oneshot/snare9.wav"></audio>
+<audio id="audio-hihat" src="http://carlitoslocacoes.com/Oneshot/hihat9.wav"></audio>
+<audio id="audio-clap" src="http://carlitoslocacoes.com/Oneshot/clap9.wav"></audio>
+<audio id="audio-bass" src="http://carlitoslocacoes.com/Oneshot/bass9.wav"></audio>
+
+
+
+update only http://carlitoslocacoes.com/Oneshot/
+add snare1.wav on library http://carlitoslocacoes.com/Oneshot/
+document.getElementById('audio-kick').src = `http://carlitoslocacoes.com/Oneshot/kick${kitNumber}.wav`;
+        document.getElementById('audio-snare').src = `http://carlitoslocacoes.com/Oneshot/snare${kitNumber}.wav`;
+        document.getElementById('audio-hihat').src = `http://carlitoslocacoes.com/Oneshot/hihat${kitNumber}.wav`;
+        document.getElementById('audio-clap').src = `http://carlitoslocacoes.com/Oneshot/clap${kitNumber}.wav`;
+        document.getElementById('audio-bass').src = `http://carlitoslocacoes.com/Oneshot/bass${kitNumber}.wav`;
+
+
 Video 1: https://www.youtube.com/watch?v=ttw50_4S3Ck
 Video 2: https://www.youtube.com/watch?v=dsmDkZFMpAo
 
