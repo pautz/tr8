@@ -4,6 +4,7 @@ Drum Machine Tr808 PHP
 kick1.wav
 kick2.wav
 ... kick9.wav
+hihat1.wav ... hihat9.wav
 
 Video 1: https://www.youtube.com/watch?v=ttw50_4S3Ck
 Video 2: https://www.youtube.com/watch?v=dsmDkZFMpAo
