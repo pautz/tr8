@@ -8,6 +8,7 @@ hihat1.wav ... hihat9.wav
 
 update only http://carlitoslocacoes.com/Oneshot/
 add bass9.wav on library http://carlitoslocacoes.com/Oneshot/
+<br>
 "audio-kick" src="http://carlitoslocacoes.com/Oneshot/kick9.wav">
 id="audio-snare" src="http://carlitoslocacoes.com/Oneshot/snare9.wav">
 id="audio-hihat" src="http://carlitoslocacoes.com/Oneshot/hihat9.wav">
