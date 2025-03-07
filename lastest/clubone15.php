@@ -2,15 +2,113 @@
 <html>
 <head>
     <title>TR-808 Drum Machine</title>
-    <style>
-        .sound-btn { display: inline-block; width: 50px; height: 50px; margin: 2px; background-color: #ccc; text-align: center; line-height: 50px; cursor: pointer; }
-        .selected { background-color: #f00; }
-        .current-sound { border: 2px solid #000; }
-        .sequence-step { display: inline-block; margin-right: 5px; }
-        .step-label { text-align: center; margin-bottom: 5px; }
-        .kit-btn { margin: 5px; padding: 5px; background-color: #ccc; cursor: pointer; }
-        .active-step { background-color: #0f0; }
-    </style>
+  <style>
+  body {
+    background-color: #6d0505;
+    color: #ddd;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sound-btn {
+    background-color: #222;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    border: 1px solid #888;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+  .sound-btn:hover {
+    background-color: #555;
+  }
+
+  .sound-btn.selected {
+    background-color: #f00;
+    color: #fff;
+    border: 1px solid #f00;
+  }
+
+  .current-sound {
+    border: 2px solid #fff;
+    background-color: #444;
+  }
+
+  .sequence-step {
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #888;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+  .sequence-step:hover {
+    background-color: #666;
+  }
+
+  .active-step {
+    background-color: #0f0;
+    border: 1px solid #0f0;
+  }
+
+  .kit-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #888;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+  .kit-btn:hover {
+    background-color: #777;
+  }
+
+  .step-label {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ccc;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 600px) {
+    .sound-btn, .sequence-step, .kit-btn {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+    }
+
+    .kit-btn {
+      padding: 5px 10px;
+    }
+  }
+
+  .sound-btn:active {
+    background-color: #f00;
+    color: #fff;
+  }
+
+  .sound-btn.selected::before {
+    content: none;
+  }
+</style>
+
 </head>
 <body>
 <h1>TR-808 Drum Machine</h1>
